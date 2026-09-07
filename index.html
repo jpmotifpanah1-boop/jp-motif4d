@@ -405,9 +405,24 @@ body:before{
   }
 }
 .eyebrow{font-size:10px;color:var(--gold);letter-spacing:2.5px;font-weight:700}
-h1{font-size:31px;line-height:1.05;margin:9px 0 8px;letter-spacing:-1px}
-.hero p{margin:0;color:var(--muted);font-size:12px;line-height:1.55;max-width:410px}
-.stats{display:flex;gap:8px;margin-top:18px}
+h1{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:31px;
+  line-height:1.05;
+  margin:9px 0 8px;
+  letter-spacing:-1px;
+  font-weight:900 !important;
+  -webkit-text-stroke:0.6px currentColor;
+}
+.hero p{
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
+  max-width:410px;
+  font-weight:900;
+}
+  .stats{display:flex;gap:8px;margin-top:18px}
 .stat{flex:1;background:#0d0f12;border:1px solid var(--line);border-radius:10px;padding:10px}
 .stat b{display:block;font-size:15px;color:var(--gold2)}.stat span{font-size:9px;color:var(--muted)}
 .section{max-width:600px;margin:auto;padding:0 15px 22px}
@@ -476,8 +491,14 @@ h1{font-size:31px;line-height:1.05;margin:9px 0 8px;letter-spacing:-1px}
 .bottom a span{display:block;font-size:19px;margin-bottom:4px}
 .bottom a.active{color:var(--gold)}
 .lightbox{
-  display:none;position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.95);
-  align-items:center;justify-content:center;padding:18px;
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:999999;
+  background:#000;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
 }
 .lightbox.show{display:flex}
 .lightbox img{max-width:100%;max-height:88vh;border-radius:10px}
@@ -622,7 +643,6 @@ h1{font-size:31px;line-height:1.05;margin:9px 0 8px;letter-spacing:-1px}
 <meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
 <body>
-
 <header class="top">
   <div class="topbar">
     <a class="logo" href="#">
@@ -658,6 +678,7 @@ h1{font-size:31px;line-height:1.05;margin:9px 0 8px;letter-spacing:-1px}
     </div>
 
   </div>
+
 </section>
 
 <section class="section" id="provider">
@@ -693,7 +714,7 @@ h1{font-size:31px;line-height:1.05;margin:9px 0 8px;letter-spacing:-1px}
     <a class="active" href="#"><span>⌂</span>Beranda</a>
 <a href="https://ertepe.luvtoberi.com/index.html?rtp=motif4d" target="_blank" rel="noopener noreferrer"><span>▦</span>RTP</a>
 <a href="https://www.motifmekar.com" target="_blank" rel="noopener noreferrer"><span>▣</span>LOGIN</a>
-    <a href="#"><span>⋯</span>Lainnya</a>
+    <a href="https://app.chaport.com/widget/show.html?appid=65df1b435f70a2e6926950dd" target="_blank" rel="noopener noreferrer"><span>⋯</span>LIVECHAT</a>
   </div>
 </nav>
 
@@ -968,9 +989,11 @@ searchInput.addEventListener(
 
 function openImage(src){
 
-  document
-    .getElementById("lightboxImg")
-    .src=src;
+  /* SEMBUNYIKAN SEMUA CARD */
+  document.getElementById("gallery").style.display="none";
+
+  /* TAMPILKAN GAMBAR YANG DIPILIH */
+  document.getElementById("lightboxImg").src=src;
 
   document
     .getElementById("lightbox")
@@ -983,10 +1006,16 @@ document
   .getElementById("close")
   .onclick=()=>{
 
+    /* TUTUP GAMBAR */
     document
       .getElementById("lightbox")
       .classList
       .remove("show");
+
+    /* TAMPILKAN SEMUA GAMBAR LAGI */
+    document
+      .getElementById("gallery")
+      .style.display="grid";
 
   };
 

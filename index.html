@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#090a0c">
+<link rel="shortcut icon" href="https://fav.luvtoberi.com/fav/favmotif4d.webp" />
+  <title>BUKTI JP MOTIF4D</title>
+<style>
+/* =========================================
+   BOTTOM NAV — BLUE SILVER 3D
+   VISUAL ONLY
+========================================= */
+
+.bottom{
+    background:transparent;
+}
+
+.bottom-inner{
+    position:relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #101c2d 0%,
+            #111820 45%,
+            #080b10 100%
+        );
+
+    border:1px solid rgba(110,170,230,.35);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.65),
+        0 0 20px rgba(40,120,220,.10),
+        inset 0 1px 0 rgba(190,220,255,.12),
+        inset 0 -3px 6px rgba(0,0,0,.75);
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    overflow:hidden;
+}
+
+
+/* =========================================
+   BLUE SILVER LIGHT LINE
+========================================= */
+
+.bottom-inner::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:10%;
+    right:10%;
+
+    height:2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #268cff,
+            #dcecff,
+            #268cff,
+            transparent
+        );
+
+    opacity:.8;
+
+    box-shadow:
+        0 0 10px rgba(55,145,255,.55);
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.bottom a{
+    position:relative;
+
+    color:#9da9b8;
+
+    font-weight:600;
+
+    text-shadow:
+        0 1px 2px rgba(0,0,0,.8);
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+/* =========================================
+   ICON 3D
+========================================= */
+
+.bottom a span{
+
+    color:#b9c5d2;
+
+    background:
+        linear-gradient(
+            145deg,
+            #243447,
+            #111820
+        );
+
+    border:1px solid rgba(130,185,235,.18);
+
+    box-shadow:
+        inset 0 1px 1px rgba(220,240,255,.10),
+        inset 0 -3px 5px rgba(0,0,0,.70),
+        0 3px 6px rgba(0,0,0,.40);
+
+    transition:
+        all .3s cubic-bezier(.2,.8,.2,1);
+}
+
+
+/* =========================================
+   ACTIVE BLUE SILVER
+========================================= */
+
+.bottom a.active{
+    color:#55aaff;
+
+    text-shadow:
+        0 0 10px rgba(55,145,255,.30);
+}
+
+.bottom a.active span{
+
+    color:#dcecff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1c5d96,
+            #102238
+        );
+
+    border-color:
+        rgba(120,190,255,.65);
+
+    box-shadow:
+
+        0 4px 12px rgba(0,0,0,.55),
+
+        inset 0 1px 2px rgba(220,240,255,.25),
+        inset 0 -3px 5px rgba(0,0,0,.65),
+
+        0 0 16px rgba(40,130,240,.20);
+
+    text-shadow:
+        0 0 9px rgba(170,215,255,.55);
+}
+
+
+/* =========================================
+   ACTIVE INDICATOR
+========================================= */
+
+.bottom a.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:4px;
+    left:50%;
+
+    width:20px;
+    height:2px;
+
+    transform:translateX(-50%);
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #268cff,
+            #e5f2ff,
+            #268cff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 8px rgba(55,145,255,.8);
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.bottom a:hover{
+    color:#6bb7ff;
+}
+
+.bottom a:hover span{
+
+    color:#d7ebff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #294866,
+            #142231
+        );
+
+    border-color:
+        rgba(110,180,250,.40);
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.45),
+        inset 0 1px 2px rgba(210,235,255,.15),
+        inset 0 -3px 5px rgba(0,0,0,.60),
+        0 0 12px rgba(40,130,240,.14);
+}
+
+
+/* =========================================
+   TOUCH
+========================================= */
+
+.bottom a:active{
+    transform:translateY(1px);
+}
+
+.bottom a:active span{
+
+    transform:scale(.95);
+
+    box-shadow:
+        inset 0 2px 5px rgba(0,0,0,.8);
+}
+
+
+:root{
+  --bg:#08090b;
+  --surface:#111316;
+  --surface2:#17191d;
+  --line:#272a2f;
+
+  /* BLUE SILVER */
+  --gold:#4da3ff;
+  --gold2:#dcecff;
+
+  --text:#f5f5f5;
+  --muted:#858991;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  padding-bottom:78px;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;
+  background:radial-gradient(circle at 50% -10%,#8b611a 0,transparent 38%);
+}
+.top{
+  position:sticky;top:0;z-index:30;
+  background:rgba(8,9,11,.94);backdrop-filter:blur(15px);
+  border-bottom:1px solid var(--line);
+}
+.topbar{
+  height:64px;display:flex;align-items:center;justify-content:space-between;
+  padding:8px 15px;max-width:600px;margin:auto;
+}
+.logo{display:block;height:43px;max-width:170px}
+.logo img{height:100%;width:auto;display:block;object-fit:contain}
+.icon-btn{
+  width:38px;height:38px;border:1px solid var(--line);border-radius:10px;
+  background:var(--surface);color:#ddd;font-size:17px;
+}
+.hero{
+  max-width:600px;margin:auto;padding:27px 15px 20px;
+}
+.hero-box{
+  border:1px solid #49391c;border-radius:17px;padding:25px 20px;
+  background:
+    radial-gradient(circle at 85% 15%,rgba(240,184,63,.16),transparent 30%),
+    linear-gradient(145deg,#17130b,#101216 65%);
+  overflow:hidden;position:relative;
+}
+.hero-box:after{
+  content:"";position:absolute;width:130px;height:130px;border-radius:50%;
+  right:-50px;bottom:-70px;border:1px solid #6a511f;opacity:.5;
+}
+/* OUTLINE JALAN SETIAP SISI */
+.hero-box{
+  position:relative;
+}
+
+/* garis utama */
+.hero-box::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border:2px solid #0b5cff;
+  border-radius:17px;
+  pointer-events:none;
+  z-index:99;
+}
+
+/* cahaya yang berjalan */
+.hero-box::after{
+  content:"";
+  position:absolute;
+
+  width:45px;
+  height:2px;
+
+  background:#168cff;
+
+  box-shadow:0 0 5px #168cff;
+
+  top:0;
+  left:0;
+
+  border-radius:10px;
+
+  pointer-events:none;
+  z-index:100;
+
+  animation:kelilingBox 4s linear infinite;
+}
+
+@keyframes kelilingBox{
+
+  /* ATAS */
+  0%{
+    top:0;
+    left:0;
+    width:45px;
+    height:2px;
+  }
+
+  24%{
+    top:0;
+    left:calc(100% - 45px);
+    width:45px;
+    height:2px;
+  }
+
+  /* KANAN */
+  25%{
+    top:0;
+    left:calc(100% - 2px);
+    width:2px;
+    height:45px;
+  }
+
+  49%{
+    top:calc(100% - 45px);
+    left:calc(100% - 2px);
+    width:2px;
+    height:45px;
+  }
+
+  /* BAWAH */
+  50%{
+    top:calc(100% - 2px);
+    left:calc(100% - 45px);
+    width:45px;
+    height:2px;
+  }
+
+  74%{
+    top:calc(100% - 2px);
+    left:0;
+    width:45px;
+    height:2px;
+  }
+
+  /* KIRI */
+  75%{
+    top:calc(100% - 45px);
+    left:0;
+    width:2px;
+    height:45px;
+  }
+
+  99%{
+    top:0;
+    left:0;
+    width:2px;
+    height:45px;
+  }
+
+  /* KEMBALI KE ATAS */
+  100%{
+    top:0;
+    left:0;
+    width:45px;
+    height:2px;
+  }
+}
+.eyebrow{font-size:10px;color:var(--gold);letter-spacing:2.5px;font-weight:700}
+h1{font-size:31px;line-height:1.05;margin:9px 0 8px;letter-spacing:-1px}
+.hero p{margin:0;color:var(--muted);font-size:12px;line-height:1.55;max-width:410px}
+.stats{display:flex;gap:8px;margin-top:18px}
+.stat{flex:1;background:#0d0f12;border:1px solid var(--line);border-radius:10px;padding:10px}
+.stat b{display:block;font-size:15px;color:var(--gold2)}.stat span{font-size:9px;color:var(--muted)}
+.section{max-width:600px;margin:auto;padding:0 15px 22px}
+.title-row{display:flex;align-items:center;justify-content:space-between;margin:3px 0 12px}
+.title-row h2{font-size:16px;margin:0}.title-row small{color:var(--muted);font-size:10px}
+.providers{
+  display:flex;gap:8px;overflow-x:auto;padding:2px 1px 8px;
+  scrollbar-width:none;
+}
+.providers::-webkit-scrollbar{display:none}
+.provider{
+  flex:0 0 auto;background:var(--surface);color:#aaa;
+  border:1px solid var(--line);border-radius:20px;padding:9px 13px;
+  font-size:10px;white-space:nowrap;
+}
+.provider.active{background:var(--gold);border-color:var(--gold);color:#111;font-weight:800}
+.search{
+  display:flex;align-items:center;gap:8px;background:var(--surface);
+  border:1px solid var(--line);border-radius:11px;padding:10px 12px;margin-bottom:15px;
+}
+.search span{color:#777}.search input{
+  width:100%;background:none;border:0;outline:0;color:#fff;font-size:12px;
+}
+.search input::placeholder{color:#666}
+.grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;
+}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:13px;
+  overflow:hidden;min-width:0;
+}
+.photo{
+  aspect-ratio:1.22/1;background:#191b1f;display:flex;align-items:center;
+  justify-content:center;color:#696d74;font-size:9px;letter-spacing:1px;
+  overflow:hidden;cursor:pointer;position:relative;
+}
+.photo:after{
+  content:"VIEW";position:absolute;right:7px;bottom:7px;
+  background:rgba(0,0,0,.72);color:#fff;border:1px solid #555;
+  border-radius:5px;padding:4px 6px;font-size:7px;
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.info{padding:10px}
+.provider-name{
+  color:var(--gold);font-size:8px;font-weight:800;
+  text-transform:uppercase;letter-spacing:.8px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.game{
+  font-size:11px;font-weight:700;margin-top:5px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.amount{font-size:12px;color:var(--gold2);font-weight:800;margin-top:9px}
+.date{font-size:8px;color:#71747b;margin-top:5px}
+.empty{display:none;text-align:center;color:var(--muted);padding:30px;font-size:12px}
+.bottom{
+  position:fixed;bottom:0;left:0;right:0;height:68px;z-index:40;
+  background:rgba(12,13,16,.97);border-top:1px solid var(--line);
+  display:flex;justify-content:center;
+}
+.bottom-inner{width:100%;max-width:600px;display:flex}
+.bottom a{
+  flex:1;text-decoration:none;color:#777;text-align:center;font-size:9px;
+  padding-top:12px;
+}
+.bottom a span{display:block;font-size:19px;margin-bottom:4px}
+.bottom a.active{color:var(--gold)}
+.lightbox{
+  display:none;position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.95);
+  align-items:center;justify-content:center;padding:18px;
+}
+.lightbox.show{display:flex}
+.lightbox img{max-width:100%;max-height:88vh;border-radius:10px}
+.close{
+  position:absolute;right:17px;top:14px;width:38px;height:38px;
+  border-radius:50%;background:#191a1e;border:1px solid #444;color:#fff;
+  font-size:25px;line-height:34px;text-align:center;
+}
+@media(min-width:601px){
+  body{background:#050608}
+  .top,.bottom{max-width:600px;margin:auto}
+  .top{border-left:1px solid var(--line);border-right:1px solid var(--line)}
+  .bottom{left:50%;right:auto;transform:translateX(-50%);width:600px}
+}
+</style>
+<style>
+.bottom-gif{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.bottom-gif img{
+    width: 100%;
+    display: block;
+}
+   .footer-copy{
+    margin-top:25px;
+    font-size:12px;
+    color:#fff;
+}
+  .bottom-gif img{
+    width:100%;
+    display:block;
+
+    filter:
+        hue-rotate(165deg)
+        saturate(1.4)
+        brightness(1.05)
+        contrast(1.05);
+
+    opacity:.95;
+}
+/* =================================
+   FOOTER BANNER
+================================= */
+
+.footer-banner{
+    width:100%;
+    max-width:600px;
+
+    margin:20px auto 20px;
+
+    padding:0 12px;
+}
+
+.footer-banner a{
+    display:block;
+}
+
+.footer-banner img{
+    display:block;
+
+    width:100%;
+    height:auto;
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,132,35,.25);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.40),
+        0 0 18px rgba(255,105,20,.06);
+
+    transition:.3s ease;
+}
+
+.footer-banner img:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.50),
+        0 0 22px rgba(255,105,20,.12);
+}
+.hero-box{
+    position:relative;
+    overflow:hidden;
+    background:#0d0e10;
+}
+
+/* GAMBAR BACKGROUND KECIL + BURAM */
+.hero-background{
+    position:absolute;
+
+    width:70%;
+    height:70%;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%, -50%);
+
+    object-fit:contain;
+
+    filter:blur(5px);
+
+    opacity:.45;
+
+    z-index:0;
+}
+
+
+/* EFEK GELAP DI SEKITAR GAMBAR */
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(0,0,0,.15) 0%,
+            rgba(0,0,0,.55) 65%,
+            rgba(0,0,0,.85) 100%
+        );
+
+    z-index:1;
+}
+
+
+/* ISI HERO TETAP DI DEPAN */
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+</style>
+<link rel="me" href="https://www.blogger.com/profile/04180086182029086600" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+<body>
+
+<header class="top">
+  <div class="topbar">
+    <a class="logo" href="#">
+      <img src="https://motifmekar.com/images/logoweb.png" alt="MOTIF4D">
+    </a>
+    <button class="icon-btn" onclick="document.getElementById('searchInput').focus()">⌕</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-box">
+
+    <!-- BACKGROUND GAMBAR -->
+    <img
+      class="hero-background"
+      src="https://i.postimg.cc/pLS2VWxQ/logo-motif4d.png"
+      alt="">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="eyebrow">MOTIF4D • WIN ARCHIVE</div>
+      <h1>JP HARIAN</h1>
+      <p>GAME GACOR DAN EASY MAXWIN MOTIF4D.!</p>
+      <div class="stats">
+        <div class="stat"><b id="total">0</b><span>TOTAL KEMENANGAN </span>
+        </div>
+        <div class="stat"><b>6</b><span>PROVIDER</span>
+        </div>
+        <div class="stat"><b>LIVE</b><span>UPDATE</span>
+        </div>
+      </div><br>
+      <div class="bottom-gif"><img src="https://i.postimg.cc/mrYdMD9r/gifkz.gif" alt="GIF">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="provider">
+  <div class="title-row">
+    <h2>Provider</h2><small>Geser untuk memilih</small>
+  </div>
+  <div class="providers">
+    <button class="provider active" data-provider="all">Semua</button>
+    <button class="provider" data-provider="pragmatic">Pragmatic Play</button>
+    <button class="provider" data-provider="pg">PG Soft</button>
+    <button class="provider" data-provider="habanero">Habanero</button>
+    <button class="provider" data-provider="nolimit">Nolimit City</button>
+    <button class="provider" data-provider="spade">Spadegaming</button>
+  </div>
+</section>
+
+<section class="section" id="album">
+  <div class="title-row">
+    <h2>SLOT EASY MAXWIN HARI INI</h2><small id="result">Terbaru</small>
+  </div>
+
+  <div class="search">
+    <span>⌕</span>
+    <input id="searchInput" type="search" placeholder="Cari game atau provider...">
+  </div>
+
+  <div class="grid" id="gallery"></div>
+  <div class="empty" id="empty">Album tidak ditemukan.</div>
+</section>
+
+<nav class="bottom">
+  <div class="bottom-inner">
+    <a class="active" href="#"><span>⌂</span>Beranda</a>
+<a href="https://ertepe.luvtoberi.com/index.html?rtp=motif4d" target="_blank" rel="noopener noreferrer"><span>▦</span>RTP</a>
+<a href="https://www.motifmekar.com" target="_blank" rel="noopener noreferrer"><span>▣</span>LOGIN</a>
+    <a href="#"><span>⋯</span>Lainnya</a>
+  </div>
+</nav>
+
+<div class="lightbox" id="lightbox">
+  <button class="close" id="close">×</button>
+  <img id="lightboxImg" src="" alt="Bukti kemenangan">
+</div>
+<footer>
+  <!-- FOOTER BANNER -->
+<section class="footer-banner">
+    <a href="https://www.motifmekar.com"
+       target="_blank"
+       rel="noopener noreferrer">
+        <img src="https://img.viva88athenae.com/pop/mobile-fgs.jpg" alt="MOTIF4D">
+    </a>
+</section>
+  </footer>
+<script>
+const data=[
+ {p:"pragmatic",provider:"Pragmatic Play",game:"GATES OF OLYMPUS 1000",amount:"IDR 30,000,000",date:"08 Sep 2026",img:"https://i.postimg.cc/rmmLX7R6/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pragmatic",provider:"Pragmatic Play",game:"SNOW PARTY",amount:"IDR 16,043,000",date:"08 Sep 2026",img:"https://i.postimg.cc/jdN2FJr3/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pragmatic",provider:"Pragmatic Play",game:"MAHJONG WINS 3 - BLACK SCATTER",amount:"IDR 41,120,000",date:"08 Sep 2026",img:"https://i.postimg.cc/hPFPTP70/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pragmatic",provider:"Pragmatic Play",game:"MAHJONG WINS 3 - BLACK SCATTER",amount:"IDR 41,120,000",date:"08 Sep 2026",img:"https://i.postimg.cc/hPFPTP70/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pragmatic",provider:"Pragmatic Play",game:"MAHJONG WINS 3 - BLACK SCATTER",amount:"IDR 6,001,200",date:"06 Sep 2026",img:"https://i.postimg.cc/0jfsCCtP/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pragmatic",provider:"Pragmatic Play",game:"MAHJONG WINS 3 - BLACK SCATTER",amount:"IDR 268,600,000",date:"06 Sep 2026",img:"https://i.postimg.cc/WzPZZsK2/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pragmatic",provider:"Pragmatic Play",game:"Gates of Olympus 1000",amount:"IDR 75,000,000",date:"06 Sep 2026",img:"https://i.postimg.cc/K8YZJdSf/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pragmatic",provider:"Pragmatic Play",game:"Sweet Bonanza 2500",amount:"IDR 15,000,000",date:"03 Sep 2026",img:"https://i.postimg.cc/RFJ1fsZz/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pragmatic",provider:"Pragmatic Play",game:"AZTEC GEMS",amount:"IDR 24,000,000",date:"03 Sep 2026",img:"https://i.postimg.cc/rpxxwdn9/image.png",playUrl:"https://www.motifmekar.com"},
+
+ {p:"pg",provider:"PG Soft",game:"WILD APE #3258",amount:"IDR 7,160,400",date:"08 Sep 2026",img:"https://i.postimg.cc/CM8whT6R/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pg",provider:"PG Soft",game:"CAISHEN WINS",amount:"IDR 160,705,590",date:"08 Sep 2026",img:"https://i.postimg.cc/nzZGXtGn/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pg",provider:"PG Soft",game:"LUCKY NEKO",amount:"IDR 9,408,230",date:"08 Sep 2026",img:"https://i.postimg.cc/SQgfx3XH/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pg",provider:"PG Soft",game:"MAHJONG WAYS 2",amount:"IDR 19,076,550",date:"08 Sep 2026",img:"https://i.postimg.cc/SKjpHwMk/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pg",provider:"PG Soft",game:"WILD BOUNTY SHOWDOWN",amount:"IDR 11,524,920",date:"08 Sep 2026",img:"https://i.postimg.cc/bN8fqGt6/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pg",provider:"PG Soft",game:"MAHJONG WAYS 1 ",amount:"IDR 17,120,800",date:"08 Sep 2026",img:"https://i.postimg.cc/kX7zk0r3/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pg",provider:"PG Soft",game:"Mahjong Ways 1",amount:"IDR 14,953,270",date:"06 Sep 2026",img:"https://i.postimg.cc/YC7F02F9/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pg",provider:"PG Soft",game:"GALATIC GEMS",amount:"IDR 125,505,050",date:"06 Sep 2026",img:"https://i.postimg.cc/g2rWv83J/image.png",playUrl:"https://www.motifmekar.com"},
+ {p:"pg",provider:"PG Soft",game:"WILD APE #3258",amount:"IDR 11,605,260",date:"06 Sep 2026",img:"https://i.postimg.cc/sfS9gNL0/image.png",playUrl:"https://www.motifmekar.com"},
+
+ {p:"habanero",provider:"Habanero",game:"Fa Cai Shen",amount:"IDR 96,300,000",date:"06 Sep 2026",img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdXsD4Q5dQ73NFbx8YIIGqzI_ZPMzio_apNfZK4qseg&s=10",playUrl:"https://www.motifmekar.com"},
+
+ {p:"nolimit",provider:"Nolimit City",game:"Mental",amount:"IDR 87,560,000",date:"05 Sep 2026",img:"https://i.postimg.cc/d3pVC6Dv/image.png",playUrl:"https://www.motifmekar.com"},
+
+ {p:"spade",provider:"Spadegaming",game:"Lucky Koi",amount:"IDR 54,210,000",date:"05 Sep 2026",img:"https://static.casino.guru/pict/682007/Lucky-Koi-Exclusive.png?timestamp=1706599803000&imageDataId=752128&width=320&height=247",playUrl:"https://www.motifmekar.com"},
+
+ {p:"habanero",provider:"Habanero",game:"Hot Hot Fruit",amount:"IDR 31,250,000",date:"04 Sep 2026",img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6RkuTP3DPt5BvHw_2mf_SjLF_iEaabCouYW6Uerk6jAvJLc3mMJV662RD&s=10",playUrl:"https://www.motifmekar.com"}
+];
+
+
+const gallery=document.getElementById("gallery");
+const empty=document.getElementById("empty");
+const total=document.getElementById("total");
+const result=document.getElementById("result");
+const searchInput=document.getElementById("searchInput");
+
+
+function render(list){
+
+  gallery.innerHTML="";
+
+  total.textContent=list.length;
+  result.textContent=list.length+" album";
+
+  empty.style.display=list.length?"none":"block";
+
+
+  list.forEach(x=>{
+
+    const card=document.createElement("article");
+
+    card.className="card";
+
+    card.innerHTML=`
+      <div class="photo">
+        <span>BUKTI FOTO</span>
+      </div>
+
+      <div class="info">
+        <div class="provider-name">${x.provider}</div>
+        <div class="game">${x.game}</div>
+        <div class="amount">${x.amount}</div>
+        <div class="date">${x.date}</div>
+      </div>
+    `;
+
+
+    const photo=card.querySelector(".photo");
+
+    const img=new Image();
+
+    img.src=x.img;
+    img.alt=x.game;
+
+
+    img.onload=()=>{
+
+      photo.innerHTML="";
+
+      /* GAMBAR */
+      photo.appendChild(img);
+
+
+      /* =========================
+         TOMBOL VIEW
+      ========================= */
+
+      const view=document.createElement("div");
+
+      view.style.cssText=
+      "position:absolute;" +
+      "right:50px;" +
+      "bottom:7px;" +
+      "background:rgba(0,20,45,.82);" +
+      "color:#fff;" +
+      "border:1px solid #168cff;" +
+      "border-radius:5px;" +
+      "padding:4px 6px;" +
+      "font-size:7px;" +
+      "cursor:pointer;" +
+      "z-index:10;" +
+      "box-shadow:0 0 6px rgba(22,140,255,.25);";
+
+      view.textContent="VIEW";
+
+
+      /* VIEW KLIK */
+      view.onclick=(e)=>{
+        e.stopPropagation();
+        openImage(x.img);
+      };
+
+
+      photo.appendChild(view);
+
+
+      /* =========================
+         TOMBOL PLAY
+      ========================= */
+
+      const play=document.createElement("button");
+
+      play.type="button";
+
+      play.textContent="PLAY";
+
+      play.style.cssText=
+        "position:absolute;" +
+        "right:8px;" +
+        "bottom:7px;" +
+        "background:rgba(0,20,45,.85);" +
+        "color:#fff;" +
+        "border:1px solid #168cff;" +
+        "border-radius:5px;" +
+        "padding:4px 8px;" +
+        "font-size:7px;" +
+        "font-weight:800;" +
+        "cursor:pointer;" +
+        "z-index:10;" +
+        "transition:.2s ease;" +
+        "box-shadow:0 0 7px rgba(22,140,255,.3);";
+
+
+      /* PLAY KLIK */
+      play.onclick=(e)=>{
+
+        e.stopPropagation();
+
+        if(x.playUrl){
+
+          window.open(
+            x.playUrl,
+            "_blank",
+            "noopener,noreferrer"
+          );
+
+        }
+
+      };
+
+
+      photo.appendChild(play);
+
+    };
+
+
+    /* KLIK GAMBAR */
+    photo.onclick=()=>openImage(x.img);
+
+
+    gallery.appendChild(card);
+
+  });
+
+}
+
+
+function filterProvider(p){
+
+  document
+    .querySelectorAll(".provider")
+    .forEach(b=>
+      b.classList.toggle(
+        "active",
+        b.dataset.provider===p
+      )
+    );
+
+  applyFilter(p,searchInput.value);
+
+}
+
+
+function applyFilter(p,query){
+
+  const q=query.trim().toLowerCase();
+
+  let list=
+    p==="all"
+      ?data
+      :data.filter(x=>x.p===p);
+
+
+  if(q){
+
+    list=list.filter(x=>
+      (
+        x.provider+" "+
+        x.game+" "+
+        x.amount
+      )
+      .toLowerCase()
+      .includes(q)
+    );
+
+  }
+
+
+  render(list);
+
+}
+
+
+document
+  .querySelectorAll(".provider")
+  .forEach(b=>{
+
+    b.addEventListener(
+      "click",
+      ()=>filterProvider(b.dataset.provider)
+    );
+
+  });
+
+
+searchInput.addEventListener(
+  "input",
+  ()=>{
+
+    const active=
+      document
+        .querySelector(".provider.active")
+        .dataset.provider;
+
+    applyFilter(
+      active,
+      searchInput.value
+    );
+
+  }
+);
+
+
+function openImage(src){
+
+  document
+    .getElementById("lightboxImg")
+    .src=src;
+
+  document
+    .getElementById("lightbox")
+    .classList.add("show");
+
+}
+
+
+document
+  .getElementById("close")
+  .onclick=()=>{
+
+    document
+      .getElementById("lightbox")
+      .classList
+      .remove("show");
+
+  };
+
+
+document
+  .getElementById("lightbox")
+  .onclick=e=>{
+
+    if(e.target.id==="lightbox"){
+
+      e.currentTarget
+        .classList
+        .remove("show");
+
+    }
+
+  };
+
+
+render(data);
+</script>
+</body>
+</html>

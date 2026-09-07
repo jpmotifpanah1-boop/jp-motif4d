@@ -268,7 +268,13 @@ body:before{
 }
 .top{
   position:sticky;top:0;z-index:30;
-  background:rgba(8,9,11,.94);backdrop-filter:blur(15px);
+  background:
+    linear-gradient(rgba(8,9,11,.92),rgba(8,9,11,.92)),
+    url("https://motifmekar.com/images/logoweb.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  backdrop-filter:blur(15px);
   border-bottom:1px solid var(--line);
 }
 .topbar{

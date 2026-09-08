@@ -6,6 +6,271 @@
 <meta name="theme-color" content="#090a0c">
 <link rel="shortcut icon" href="https://fav.luvtoberi.com/fav/favmotif4d.webp" />
   <title>BUKTI JP MOTIF4D</title>
+<!-- LOADING SCREEN -->
+<div id="loader">
+    <div class="loader-content">
+
+        <img src="https://motifmekar.com/images/logoweb.png"
+             class="loader-logo"
+             alt="MOTIF4D">
+
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+
+     <div class="loader-text">
+    <span>L</span>
+    <span>O</span>
+    <span>A</span>
+    <span>D</span>
+    <span>I</span>
+    <span>N</span>
+    <span>G</span>
+    <span>.</span>
+    <span>.</span>
+    <span>.</span>
+</div>
+
+    </div>
+</div>
+  <script>
+const loader = document.getElementById("loader");
+
+function hideLoader() {
+
+    if (!loader) return;
+
+    loader.classList.add("hide-loader");
+
+    setTimeout(() => {
+        loader.remove();
+    }, 5000);
+
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Delay 800ms agar animasi terlihat smooth
+    setTimeout(hideLoader, 5000);
+
+});
+
+// Backup jika halaman lambat
+window.addEventListener("load", hideLoader);
+
+// Paksa hilang maksimal 3 detik jika ada yang macet
+setTimeout(hideLoader, 5000);
+  </script>
+  <style>
+/*=============================
+     MOTIF4D LOADER V3
+     AQUA THEME
+==============================*/
+
+#loader{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#06141d;
+
+    z-index:999999;
+
+    transition:
+    opacity .35s ease,
+    visibility .35s ease;
+
+}
+
+.loader-box{
+
+    text-align:center;
+
+    animation:fadeIn .5s ease;
+
+}
+
+.loader-logo{
+
+    width:280px;
+    max-width:75vw;
+
+    user-select:none;
+    pointer-events:none;
+
+    animation:floatLogo 2.2s ease-in-out infinite;
+
+}
+
+/* BAR */
+
+.loader-bar{
+
+    width:230px;
+    height:6px;
+
+    margin:28px auto 16px;
+
+    background:#14313f;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.08);
+
+}
+
+.loader-progress{
+
+    display:block;
+
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #bffcff,
+        #47e8ff,
+        #00b8e6
+    );
+
+    transform:translateX(-100%);
+
+    animation:progress .85s ease forwards;
+
+}
+
+/* TEXT */
+
+.loader-text{
+
+    display:flex;
+    justify-content:center;
+    gap:2px;
+    margin-top:18px;
+
+}
+
+.loader-text span{
+
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:1px;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff,
+        #eafcff,
+        #8ef5ff,
+        #25dfff,
+        #0098d4
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 1px 0 rgba(255,255,255,.35),
+        0 0 8px rgba(71,232,255,.28);
+
+    animation:bounce .9s infinite ease-in-out;
+
+}
+
+.loader-text span:nth-child(2){animation-delay:.08s;}
+.loader-text span:nth-child(3){animation-delay:.16s;}
+.loader-text span:nth-child(4){animation-delay:.24s;}
+.loader-text span:nth-child(5){animation-delay:.32s;}
+.loader-text span:nth-child(6){animation-delay:.40s;}
+.loader-text span:nth-child(7){animation-delay:.48s;}
+.loader-text span:nth-child(8){animation-delay:.56s;}
+.loader-text span:nth-child(9){animation-delay:.64s;}
+.loader-text span:nth-child(10){animation-delay:.72s;}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0);
+        opacity:.7;
+    }
+
+    50%{
+        transform:translateY(-4px);
+        opacity:1;
+    }
+
+}
+
+.hide-loader{
+
+    opacity:0;
+    visibility:hidden;
+
+}
+
+/*=============================
+          ANIMATION
+==============================*/
+
+@keyframes progress{
+
+    to{
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(8px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes floatLogo{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-5px);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.loader-logo{
+    width:220px;
+}
+
+.loader-bar{
+    width:190px;
+}
+
+.loader-text{
+    font-size:14px;
+}
+
+    }
+  </style>
 <style>
 /* =========================================
    BOTTOM NAV — BLUE SILVER 3D
@@ -738,6 +1003,71 @@ h1{
     </a>
 </section>
   </footer>
+  <!-- Jumpscare Overlay -->
+<div id="jumpscare">
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjSuuJqpibWPXrWYyiskpwy6rnx9FCYcQjtxJ0_PHU7KqXIdm_XcyDLUpbJzT509HCNOrcSKHzQiWnBOftivsF4_YU7pgbC4YRvSdyHIGQsq4g50VFwPyufegHLR9-CGceGwIhyhF3h8QYwpjvbRnQgDH6Euw6AYs7P54tZT5cU5f7XvqqcjJAENS8fXEY3" alt="Scary">
+</div>
+
+<audio id="scream" preload="auto">
+    <source src="https://www.image2url.com/r2/default/audio/1782604585584-bb7c87b9-0a85-4068-8367-30cbeed0a8e0.mp3">
+</audio>
+
+<style>
+#jumpscare{
+    position:fixed;
+    inset:0;
+    background:#000;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999999999;
+    animation:flash .08s infinite;
+}
+
+#jumpscare img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+@keyframes flash{
+    0%{background:#000;}
+    50%{background:#fff;}
+    100%{background:#000;}
+}
+</style>
+
+<script>
+function showJumpScare(){
+    const js = document.getElementById("jumpscare");
+    const audio = document.getElementById("scream");
+
+    js.style.display = "flex";
+
+    audio.currentTime = 0;
+    audio.play().catch(()=>{});
+
+    setTimeout(()=>{
+        js.style.display="none";
+    },2500);
+}
+
+document.addEventListener("keydown",function(e){
+
+    if(
+        e.key==="F12" ||
+        (e.ctrlKey && (e.key==="u" || e.key==="U")) ||
+        (e.ctrlKey && e.shiftKey &&
+            ["I","i","J","j","C","c"].includes(e.key))
+    ){
+        e.preventDefault();
+        showJumpScare();
+        return false;
+    }
+
+});
+
+</script>
 <script>
 const data=[
  {p:"pragmatic",provider:"Pragmatic Play",game:"MAHJONG WINS 3 - BLACK SCATTER",amount:"IDR 269,000,000",date:"08 Sep 2026",img:"https://i.postimg.cc/RCDtZY1Q/image.png",playUrl:"https://www.motifmekar.com"},
@@ -1045,6 +1375,7 @@ document
 
 
 render(data);
+
 </script>
 </body>
 </html>
